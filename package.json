@@ -1,6 +1,6 @@
 {
   "name": "nuxt-pnpm-vercel-builder",
-  "version": "0.24.0",
+  "version": "0.26.0",
   "repository": "nuxt/vercel-builder",
   "license": "MIT",
   "exports": {
