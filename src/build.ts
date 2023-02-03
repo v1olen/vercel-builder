@@ -120,10 +120,8 @@ export async function build (opts: BuildOptions & { config: NuxtBuilderConfig })
   await runNpmInstall(entrypointPath, [
     '--prefer-offline',
     '--frozen-lockfile',
-    '--non-interactive',
     '--production=false',
-    `--modules-folder=${modulesPath}`,
-    `--cache-folder=${yarnCachePath}`
+    `--modules-dir=${modulesPath}`,
   ], { ...spawnOpts, env: { ...spawnOpts.env, NODE_ENV: 'development' } }, meta)
 
   // ----------------- Pre build -----------------
@@ -193,10 +191,8 @@ export async function build (opts: BuildOptions & { config: NuxtBuilderConfig })
   await runNpmInstall(entrypointPath, [
     '--prefer-offline',
     '--pure-lockfile',
-    '--non-interactive',
     '--production=true',
-    `--modules-folder=${modulesPath}`,
-    `--cache-folder=${yarnCachePath}`
+    `--modules-dir=${modulesPath}`,
   ], {
     ...spawnOpts,
     env: {

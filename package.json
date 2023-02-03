@@ -1,5 +1,5 @@
 {
-  "name": "@nuxtjs/vercel-builder",
+  "name": "nuxt-pnpm-vercel-builder",
   "version": "0.24.0",
   "repository": "nuxt/vercel-builder",
   "license": "MIT",
